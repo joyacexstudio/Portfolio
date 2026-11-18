@@ -1,0 +1,6 @@
+{
+  "name": "JoyaceXstudio",
+  "description": "JoyaceXstudio — Pioneering educational community and dynamic digital hub delivering Web & WordPress, Full Stack, AI Apps, Landing Pages, and SEO Content Writing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

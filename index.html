@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JoyaceXstudio — Digital Product Studio &amp; Educational Creator Hub</title>
+    <meta
+      name="description"
+      content="Welcome to JoyaceXstudio! A pioneering educational community and dynamic digital hub delivering Web & WordPress, Full Stack, AI Apps, Landing Pages, and Content Writing."
+    />
+    <meta
+      property="og:title"
+      content="JoyaceXstudio — Digital Product Studio &amp; Educational Creator Hub"
+    />
+    <meta
+      property="og:description"
+      content="Delivering industry-leading Web, Full Stack, AI, Landing Page, and Content solutions while empowering a passionate network of tech creators."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#060913" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('joyacexstudio_theme');
+          if (t === 'light') {
+            document.documentElement.dataset.theme = 'light';
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+            var m = document.querySelector('meta[name="theme-color"]');
+            if (m) m.setAttribute('content', '#f8fafc');
+          } else {
+            document.documentElement.dataset.theme = 'obsidian';
+            document.documentElement.style.colorScheme = 'dark';
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="icon" type="image/png" href="/assets/aistudio/favicon-32x32_666d18ed.png" />
+    <link rel="preload" as="image" href="/assets/aistudio/favicon-32x32_666d18ed.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+  </head>
+  <body class="antialiased selection:bg-sky-400/25 selection:text-sky-100">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
