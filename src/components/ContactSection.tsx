@@ -17,6 +17,7 @@ import { ToastNotification, type ToastItem } from './ToastNotification';
 import { useLocale } from '../i18n/LocaleContext';
 import { getServiceCopy } from '../i18n/translations';
 import { useTheme } from '../theme/ThemeContext';
+import brandEmblem from '../assets/images/brand-emblem.png';
 
 const NEWSLETTER_STORAGE_KEY = 'joyacexstudio_newsletter_email';
 
@@ -684,11 +685,10 @@ export function ContactSection({
         <div className="mt-10 flex flex-col items-start justify-between gap-5 border-t border-slate-800/80 pt-8 pb-6 lg:flex-row lg:items-center lg:gap-8">
           <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 shrink-0">
             <img
-              src="/assets/aistudio/favicon-32x32_666d18ed.png"
+              src={brandEmblem}
               alt="JoyaceXstudio"
               width={24}
               height={24}
-              referrerPolicy="no-referrer"
               className="h-6 w-6 shrink-0 rounded object-cover border border-sky-400/25"
             />
             <span className="font-display text-sm font-semibold text-slate-200 whitespace-nowrap">

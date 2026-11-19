@@ -17,6 +17,7 @@ import {
   type Locale,
 } from '../i18n/translations';
 import { useTheme } from '../theme/ThemeContext';
+import brandEmblem from '../assets/images/brand-emblem.png';
 
 interface TopBarProps {
   onStartProject: () => void;
@@ -458,9 +459,10 @@ export function TopBar({ onStartProject }: TopBarProps) {
           className="inline-flex items-center gap-2 text-base font-display font-semibold tracking-tight text-slate-50 whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-sky-400 rounded-md sm:gap-2.5 sm:text-lg"
         >
           <img
-            src="/assets/aistudio/favicon-32x32_666d18ed.png"
+            src={brandEmblem}
             alt="JoyaceXstudio emblem"
-            referrerPolicy="no-referrer"
+            width={28}
+            height={28}
             className="h-7 w-7 rounded-md object-cover border border-sky-400/30 shrink-0"
           />
           <span>JoyaceXstudio</span>
